@@ -9,9 +9,9 @@ Este repositório é destinado ao desenvolvimento e à publicação de **três p
 O objetivo principal deste projeto é dar visibilidade às ações de extensão do IFRN Canguaretama, apresentando à comunidade interna e externa os impactos, objetivos e resultados alcançados pelas iniciativas.
 
 ### 🌐 Projetos Abordados
-1. **[Incubadora Tecnológica]**: Indefinido.
-2. **[Saberes da Terra]**: Indefinido.
-3. **[Indefinido]**: Indefinido.
+1. **[Incubadora Tecnológica]**: Professora Brisa.
+2. **[Saberes da Terra]**: Professor Neilson.
+3. **[IFSOL]**: Professora Viviane.
 
 ---
 
@@ -20,7 +20,7 @@ O objetivo principal deste projeto é dar visibilidade às ações de extensão 
 - **HTML5**: Estruturação semântica do conteúdo.
 - **CSS3**: Estilização e design responsivo.
 - **JavaScript** *(opcional)*: Interatividade e dinamicidade das páginas.
-- **Django** *Framework do Python para o backend das páginas.
+- **Bootstrap** *Framework para responsividade.
 
 ## 👥 Autores & Contribuidores
 
