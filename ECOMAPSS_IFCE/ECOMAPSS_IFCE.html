@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ECOMAPSS • Biodiversidade do Campus • Extensão IFRN 2026</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="ECOMAPSS_IFCE.css">
+</head>
+<body class="pagina-ecomapss">
+
+  <!-- NAVBAR COMPARTILHADA -->
+  <nav class="navbar navbar-dark navbar-eco py-3 shadow-sm sticky-top">
+    <div class="container d-flex justify-content-between align-items-center">
+      <a class="navbar-brand fw-bold fs-5 mb-0" href="#">Extensão IFRN • 2026</a>
+      <span class="badge-projeto-topo fw-semibold small px-3 py-1 rounded-pill">Projeto de Extensão</span>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <header class="hero-eco py-5">
+    <div class="container py-lg-3">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+          <span class="badge badge-local rounded-pill px-3 py-2 mb-3 shadow-sm">
+            <span class="ponto-verde d-inline-block rounded-circle me-2"></span>
+            RIO GRANDE DO NORTE • FAUNA &amp; FLORA
+          </span>
+          <h1 class="display-4 fw-bolder titulo-marinho mb-3">
+            Descubra a biodiversidade <span class="destaque-azul">do campus.</span>
+          </h1>
+          <div class="divisor-azul mb-4"></div>
+          <p class="fs-5 texto-hero mb-4">
+            Inventário digital e mapeamento interativo da fauna e flora do campus. A vida merece um lugar no mapa.
+          </p>
+          <div class="d-flex flex-wrap gap-3">
+            <a href="#explore-mapa" class="btn btn-eco-primario btn-lg px-4 rounded-3">Explorar o Mapa</a>
+            <a href="#propositos-eco" class="btn btn-eco-secundario btn-lg px-4 rounded-3">Conhecer Propósitos</a>
+          </div>
+        </div>
+
+        <!-- Composição Visual (Logotipo + Espaços para Fotos) -->
+        <div class="col-lg-6 d-flex justify-content-center">
+          <div class="position-relative d-inline-block">
+            <!-- Círculo Principal (Fauna) -->
+            <div class="foto-fauna-placeholder rounded-circle shadow d-flex flex-column justify-content-center align-items-center text-center p-4">
+              <span class="fw-bold texto-floresta">[Foto: Fauna do Campus]</span>
+              <small class="texto-floresta-suave mt-1">Ex.: Avifauna local</small>
+            </div>
+
+            <!-- Círculo Secundário (Flora) -->
+            <div class="foto-flora-placeholder rounded-circle shadow d-flex justify-content-center align-items-center text-center p-2 position-absolute bottom-0 start-0">
+              <span class="fw-bold small texto-floresta">[Foto: Flora]</span>
+            </div>
+
+            <!-- Logotipo Vetorial ECOMAPSS -->
+            <div class="logo-ecomapss-badge position-absolute top-0 end-0 shadow rounded-circle">
+              <svg viewBox="0 0 140 140" class="w-100 h-100" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Logotipo ECOMAPSS">
+                <circle cx="70" cy="70" r="70" fill="#0099E5"/>
+                <path d="M28 45 V28 H45" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round"/>
+                <path d="M112 45 V28 H95" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round"/>
+                <path d="M28 95 V112 H45" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round"/>
+                <path d="M112 95 V112 H95" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round"/>
+                <path d="M70 22 C48 22 34 38 34 58 C34 82 70 112 70 112 V22 Z" fill="#1B5E20"/>
+                <path d="M70 22 C92 22 106 38 106 58 C106 82 70 112 70 112 V22 Z" fill="#76D22D"/>
+                <circle cx="70" cy="56" r="15" fill="#0099E5"/>
+                <circle cx="70" cy="122" r="6" fill="#2E7D32"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- CONTEÚDO PRINCIPAL -->
+  <main class="container my-5">
+
+    <!-- FAIXA DE DESTAQUE -->
+    <section class="mb-5">
+      <div class="faixa-conhecimento rounded-4 overflow-hidden shadow-sm">
+        <div class="faixa-conhecimento-topo px-4 py-2 fw-bold small text-uppercase">
+          Natureza + Conhecimento — Conhecer para cuidar
+        </div>
+        <div class="p-4">
+          <p class="h5 fw-semibold titulo-marinho mb-0">
+            O ECOMAPSS cria um inventário digital e mapeia a fauna e a flora presentes no campus.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO: UM MAPA, TRÊS PROPÓSITOS -->
+    <section id="propositos-eco" class="mb-5 pt-2">
+      <p class="eyebrow-verde text-uppercase fw-bold small mb-1">
+        Conhecer • Conectar • Preservar
+      </p>
+      <h2 class="h2 fw-bolder titulo-marinho mb-4">
+        Um mapa, três propósitos
+      </h2>
+
+      <div class="row g-4">
+        <!-- Card 1: Proteger -->
+        <div class="col-md-4">
+          <div class="card card-proposito h-100 rounded-4 shadow-sm">
+            <div class="card-body p-4">
+              <div class="numero-box numero-verde d-inline-flex align-items-center justify-content-center rounded-3 fw-bolder fs-4 mb-3">
+                1
+              </div>
+              <h3 class="h4 fw-bold titulo-marinho">Proteger</h3>
+              <p class="texto-card mb-0">
+                Proteção da biodiversidade local por meio da catalogação e monitoramento das espécies nativas do campus.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2: Educar -->
+        <div class="col-md-4">
+          <div class="card card-proposito h-100 rounded-4 shadow-sm">
+            <div class="card-body p-4">
+              <div class="numero-box numero-azul d-inline-flex align-items-center justify-content-center rounded-3 fw-bolder fs-4 mb-3">
+                2
+              </div>
+              <h3 class="h4 fw-bold titulo-marinho">Educar</h3>
+              <p class="texto-card mb-0">
+                Educação ambiental digital acessível a estudantes, servidores e visitantes através de trilhas interativas.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3: Valorizar -->
+        <div class="col-md-4">
+          <div class="card card-proposito h-100 rounded-4 shadow-sm">
+            <div class="card-body p-4">
+              <div class="numero-box numero-verde d-inline-flex align-items-center justify-content-center rounded-3 fw-bolder fs-4 mb-3">
+                3
+              </div>
+              <h3 class="h4 fw-bold titulo-marinho">Valorizar</h3>
+              <p class="texto-card mb-0">
+                Incentivo ao turismo sustentável e à valorização do patrimônio ecológico do Rio Grande do Norte.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO: EXPLORE O MAPA (QR CODE) -->
+    <section id="explore-mapa" class="banner-qrcode p-4 p-md-5 rounded-4 shadow-sm">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-8">
+          <h2 class="h2 fw-bolder mb-3">Um novo olhar para a vida ao nosso redor.</h2>
+          <p class="texto-banner fs-5 mb-0">
+            Aponte a câmera do seu celular para o QR Code ao lado e explore o mapa interativo da biodiversidade em tempo real.
+          </p>
+        </div>
+        <div class="col-lg-4 text-center">
+          <div class="card-qrcode p-3 rounded-4 d-inline-block shadow-sm">
+            <div class="qr-placeholder d-flex align-items-center justify-content-center mx-auto mb-2">
+              <span class="fw-bold destaque-azul">[QR CODE]</span>
+            </div>
+            <p class="fw-bolder small titulo-marinho mb-0">EXPLORE O MAPA!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- RODAPÉ -->
+  <footer class="rodape-eco py-4 mt-auto">
+    <div class="container">
+      <div class="row align-items-center text-center text-md-start gy-2">
+        <div class="col-md-8">
+          <p class="fw-bold mb-1">PLATAFORMA DIGITAL ECOMAPSS</p>
+          <small class="rodape-subtexto">Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Norte (IFRN)</small>
+        </div>
+        <div class="col-md-4 text-md-end">
+          <p class="fw-semibold mb-0">A natureza por perto.</p>
+          <small class="fw-semibold rodape-destaque">O cuidado com cada olhar.</small>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

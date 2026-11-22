@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --cor-fundo: #F4F7F5;
+  --cor-hero: #E5EDE8;
+  --cor-azul: #0084D1;
+  --cor-azul-hover: #006BB0;
+  --cor-verde: #4CAF50;
+  --cor-marinho: #0A2540;
+  --cor-floresta: #1B4D3E;
+  --cor-borda: #D8E3DC;
+}
+
+body.pagina-ecomapss {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--cor-fundo);
+  color: #4A5568;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Navbar */
+.navbar-eco {
+  background-color: var(--cor-marinho);
+}
+
+.badge-projeto-topo {
+  background-color: var(--cor-azul);
+  color: #FFFFFF;
+}
+
+.navbar-eco .nav-link:hover {
+  color: #FFFFFF;
+}
+
+.navbar-eco .nav-link.active {
+  background-color: var(--cor-azul);
+  border-radius: 50rem;
+  color: #FFFFFF;
+}
+
+/* Hero Section */
+.hero-eco {
+  background-color: var(--cor-hero);
+}
+
+.badge-local {
+  background-color: #FFFFFF;
+  color: var(--cor-floresta);
+  letter-spacing: 0.5px;
+}
+
+.ponto-verde {
+  width: 8px;
+  height: 8px;
+  background-color: var(--cor-verde);
+}
+
+.titulo-marinho {
+  color: var(--cor-marinho);
+}
+
+.destaque-azul {
+  color: var(--cor-azul);
+}
+
+.divisor-azul {
+  width: 60px;
+  height: 4px;
+  background-color: var(--cor-azul);
+  border-radius: 2px;
+}
+
+.texto-hero {
+  color: #2C3E50;
+}
+
+/* Botões */
+.btn-eco-primario {
+  background-color: var(--cor-azul);
+  color: #FFFFFF;
+  font-weight: 700;
+  border: none;
+}
+
+.btn-eco-primario:hover {
+  background-color: var(--cor-azul-hover);
+  color: #FFFFFF;
+}
+
+.btn-eco-secundario {
+  background-color: #FFFFFF;
+  color: var(--cor-floresta);
+  border: 2px solid var(--cor-floresta);
+  font-weight: 700;
+}
+
+.btn-eco-secundario:hover {
+  background-color: var(--cor-floresta);
+  color: #FFFFFF;
+}
+
+/* Placeholders de Foto e Logo */
+.foto-fauna-placeholder {
+  width: 280px;
+  height: 280px;
+  background-color: #C8DCD0;
+  border: 6px solid #FFFFFF;
+}
+
+@media (min-width: 992px) {
+  .foto-fauna-placeholder {
+    width: 340px;
+    height: 340px;
+  }
+}
+
+.foto-flora-placeholder {
+  width: 140px;
+  height: 140px;
+  background-color: #A9CBB7;
+  border: 6px solid #FFFFFF;
+}
+
+.texto-floresta {
+  color: var(--cor-floresta);
+}
+
+.texto-floresta-suave {
+  color: #3B6E5C;
+}
+
+.logo-ecomapss-badge {
+  width: 96px;
+  height: 96px;
+}
+
+/* Faixa Conhecimento */
+.faixa-conhecimento {
+  background-color: #FFFFFF;
+  border: 2px solid var(--cor-verde);
+}
+
+.faixa-conhecimento-topo {
+  background-color: var(--cor-azul);
+  color: #FFFFFF;
+  letter-spacing: 1px;
+}
+
+/* Propósitos */
+.eyebrow-verde {
+  color: var(--cor-verde);
+  letter-spacing: 1.5px;
+}
+
+.card-proposito {
+  background-color: #FFFFFF;
+  border: 1.5px solid var(--cor-borda);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card-proposito:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+}
+
+.texto-card {
+  color: #4A5568;
+}
+
+.numero-box {
+  width: 52px;
+  height: 52px;
+}
+
+.numero-verde {
+  background-color: #E8F5E9;
+  color: #2E7D32;
+}
+
+.numero-azul {
+  background-color: #E1F5FE;
+  color: var(--cor-azul);
+}
+
+/* Banner QR Code */
+.banner-qrcode {
+  background-color: var(--cor-azul);
+  color: #FFFFFF;
+}
+
+.texto-banner {
+  color: #E0F2FE;
+}
+
+.card-qrcode {
+  background-color: #FFFFFF;
+}
+
+.qr-placeholder {
+  width: 150px;
+  height: 150px;
+  background-color: #F0F4F8;
+  border: 2px dashed var(--cor-azul);
+  border-radius: 10px;
+}
+
+/* Rodapé */
+.rodape-eco {
+  background-color: var(--cor-marinho);
+  color: #FFFFFF;
+}
+
+.rodape-subtexto {
+  color: #94A3B8;
+}
+
+.rodape-destaque {
+  color: var(--cor-verde);
+}

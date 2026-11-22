@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --cor-fundo: #F7F5EE;
+  --cor-terracota: #D94B2B;
+  --cor-terracota-escura: #C43E20;
+  --cor-verde: #4C9A2A;
+  --cor-verde-escuro: #1E3A1E;
+  --cor-verde-banner: #3B8224;
+  --cor-amarelo: #F2B705;
+  --cor-borda: #E2DDD2;
+}
+
+body.pagina-ifsol {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--cor-fundo);
+  color: #4A5568;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Navbar */
+.navbar-ifsol {
+  background-color: var(--cor-verde-escuro);
+}
+
+.badge-projeto-topo {
+  background-color: var(--cor-terracota);
+  color: #FFFFFF;
+}
+
+.navbar-ifsol .nav-link:hover {
+  color: #FFFFFF;
+}
+
+.navbar-ifsol .nav-link.active {
+  background-color: var(--cor-terracota);
+  border-radius: 50rem;
+  color: #FFFFFF;
+}
+
+/* Faixa da Marca */
+.faixa-marca {
+  background-color: var(--cor-fundo);
+}
+
+.eyebrow-marca {
+  color: #7A6E65;
+  letter-spacing: 1.5px;
+}
+
+.slogan-superior {
+  color: #4A4540;
+}
+
+.slogan-destaque {
+  color: var(--cor-verde);
+}
+
+/* Hero Section */
+.hero-ifsol {
+  background-color: var(--cor-terracota);
+  color: #FFFFFF;
+}
+
+.hero-subtitulo {
+  color: #FDECE8;
+}
+
+.btn-ifsol-verde {
+  background-color: var(--cor-verde);
+  color: #FFFFFF;
+  font-weight: 700;
+  border: none;
+}
+
+.btn-ifsol-verde:hover {
+  background-color: var(--cor-verde-banner);
+  color: #FFFFFF;
+}
+
+.btn-ifsol-branco {
+  background-color: #FFFFFF;
+  color: var(--cor-terracota);
+  font-weight: 700;
+  border: none;
+}
+
+.btn-ifsol-branco:hover {
+  background-color: #FDECE8;
+  color: var(--cor-terracota);
+}
+
+.caixa-ilustracao {
+  background-color: var(--cor-terracota-escura);
+  border: 3px dashed var(--cor-amarelo);
+  border-radius: 20px;
+}
+
+/* Missão */
+.bloco-missao {
+  background-color: #FFFFFF;
+  border: 1.5px solid var(--cor-borda);
+  border-left: 12px solid var(--cor-verde);
+}
+
+.eyebrow-terracota {
+  color: var(--cor-terracota);
+  letter-spacing: 1.5px;
+}
+
+.eyebrow-verde {
+  color: var(--cor-verde);
+  letter-spacing: 1.5px;
+}
+
+.titulo-escuro {
+  color: var(--cor-verde-escuro);
+}
+
+/* Pilares */
+.card-pilar {
+  background-color: #FFFFFF;
+  border: 1.5px solid var(--cor-borda);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card-pilar:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+}
+
+.texto-card {
+  color: #4A5568;
+}
+
+.icone-cooperar {
+  background-color: #E8F5E9;
+  color: var(--cor-verde);
+}
+
+.icone-valorizar {
+  background-color: #FEF7E0;
+  color: var(--cor-amarelo);
+}
+
+.icone-comercializar {
+  background-color: #FDECE8;
+  color: var(--cor-terracota);
+}
+
+/* Banner de Chamada */
+.banner-chamada {
+  background-color: var(--cor-verde-banner);
+  color: #FFFFFF;
+}
+
+.texto-amarelo {
+  color: var(--cor-amarelo);
+}
+
+.texto-banner {
+  color: #E8F5E9;
+}
+
+.selo-coletivo {
+  background-color: #2D6A1A;
+  border: 1.5px solid #8BC34A;
+}
+
+/* Rodapé */
+.rodape-ifsol {
+  background-color: var(--cor-verde-escuro);
+  color: #FFFFFF;
+}
+
+.rodape-subtexto {
+  color: #B5C7B5;
+}
