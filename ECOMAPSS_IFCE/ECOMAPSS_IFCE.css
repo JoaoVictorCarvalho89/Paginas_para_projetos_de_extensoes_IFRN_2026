@@ -219,3 +219,17 @@ body.pagina-ecomapss {
 .rodape-destaque {
   color: var(--cor-verde);
 }
+
+.qr-placeholder {
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.img-qrcode {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
