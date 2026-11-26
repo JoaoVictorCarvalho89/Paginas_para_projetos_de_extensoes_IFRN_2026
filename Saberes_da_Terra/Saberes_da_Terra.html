@@ -198,13 +198,15 @@
         </div>
         <div class="carousel-inner pb-5">
           <div class="carousel-item active">
-            <div class="moldura-panfleto mx-auto p-2 rounded-4 shadow-sm">
-              <img src="imagens/Panfleto-1-Saberes-da-terra.jpg" class="d-block w-100 rounded-3 img-panfleto" alt="Panfleto 1 - Saberes da Terra">
+            <div class="moldura-panfleto panfleto-clicavel mx-auto p-2 rounded-4 shadow-sm" role="button" tabindex="0" data-bs-toggle="modal" data-bs-target="#modalZoomSaberes" data-panfleto-src="Imagens/Panfleto-1-Saberes-da-terra.jpg" data-panfleto-alt="Panfleto 1 - Saberes da Terra">
+              <img src="Imagens/Panfleto-1-Saberes-da-terra.jpg" class="d-block w-100 rounded-3 img-panfleto" alt="Panfleto 1 - Saberes da Terra">
+              <p class="small texto-zoom text-center mt-2 mb-0">Toque ou clique para ampliar</p>
             </div>
           </div>
           <div class="carousel-item">
-            <div class="moldura-panfleto mx-auto p-2 rounded-4 shadow-sm">
-              <img src="imagens/Panfleto-2-Saberes-da-terra.jpg" class="d-block w-100 rounded-3 img-panfleto" alt="Panfleto 2 - Saberes da Terra">
+            <div class="moldura-panfleto panfleto-clicavel mx-auto p-2 rounded-4 shadow-sm" role="button" tabindex="0" data-bs-toggle="modal" data-bs-target="#modalZoomSaberes" data-panfleto-src="Imagens/Panfleto-2-Saberes-da-terra.jpg" data-panfleto-alt="Panfleto 2 - Saberes da Terra">
+              <img src="Imagens/Panfleto-2-Saberes-da-terra.jpg" class="d-block w-100 rounded-3 img-panfleto" alt="Panfleto 2 - Saberes da Terra">
+              <p class="small texto-zoom text-center mt-2 mb-0">Toque ou clique para ampliar</p>
             </div>
           </div>
         </div>
@@ -221,13 +223,15 @@
       <!-- Grade Lado a Lado exclusiva para Tablet/PC -->
       <div class="row g-4 justify-content-center d-none d-md-flex">
         <div class="col-md-5 col-lg-4">
-          <div class="moldura-panfleto p-3 rounded-4 shadow-sm h-100">
-            <img src="imagens/Panfleto-1-Saberes-da-terra.jpg" class="w-100 rounded-3 img-panfleto" alt="Panfleto 1 - Saberes da Terra">
+          <div class="moldura-panfleto panfleto-clicavel p-3 rounded-4 shadow-sm h-100" role="button" tabindex="0" data-bs-toggle="modal" data-bs-target="#modalZoomSaberes" data-panfleto-src="Imagens/Panfleto-1-Saberes-da-terra.jpg" data-panfleto-alt="Panfleto 1 - Saberes da Terra">
+            <img src="Imagens/Panfleto-1-Saberes-da-terra.jpg" class="w-100 rounded-3 img-panfleto" alt="Panfleto 1 - Saberes da Terra">
+            <p class="small texto-zoom text-center mt-2 mb-0">Toque ou clique para ampliar</p>
           </div>
         </div>
         <div class="col-md-5 col-lg-4">
-          <div class="moldura-panfleto p-3 rounded-4 shadow-sm h-100">
-            <img src="imagens/Panfleto-2-Saberes-da-terra.jpg" class="w-100 rounded-3 img-panfleto" alt="Panfleto 2 - Saberes da Terra">
+          <div class="moldura-panfleto panfleto-clicavel p-3 rounded-4 shadow-sm h-100" role="button" tabindex="0" data-bs-toggle="modal" data-bs-target="#modalZoomSaberes" data-panfleto-src="Imagens/Panfleto-2-Saberes-da-terra.jpg" data-panfleto-alt="Panfleto 2 - Saberes da Terra">
+            <img src="Imagens/Panfleto-2-Saberes-da-terra.jpg" class="w-100 rounded-3 img-panfleto" alt="Panfleto 2 - Saberes da Terra">
+            <p class="small texto-zoom text-center mt-2 mb-0">Toque ou clique para ampliar</p>
           </div>
         </div>
       </div>
@@ -268,6 +272,53 @@
     </div>
   </footer>
 
+  <!-- MODAL DE ZOOM DOS PANFLETOS -->
+  <div class="modal fade" id="modalZoomSaberes" tabindex="-1" aria-labelledby="modalZoomSaberesLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content border-0 rounded-4 overflow-hidden">
+        <div class="modal-header border-0 pb-0">
+          <h3 class="modal-title h6 fw-bold font-editorial titulo-principal" id="modalZoomSaberesLabel">Panfleto — Saberes da Terra</h3>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+        </div>
+        <div class="modal-body text-center p-3 p-md-4">
+          <img alt="" id="modalZoomSaberesImg" class="img-fluid rounded-3">
+        </div>
+      </div>
+    </div>
+  </div>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var modalEl = document.getElementById('modalZoomSaberes');
+      var modalImg = document.getElementById('modalZoomSaberesImg');
+      var modalTitle = document.getElementById('modalZoomSaberesLabel');
+      if (!modalEl || !modalImg || !modalTitle) return;
+
+      modalEl.addEventListener('show.bs.modal', function (event) {
+        var trigger = event.relatedTarget;
+        if (!trigger) return;
+        var src = trigger.getAttribute('data-panfleto-src') || '';
+        var alt = trigger.getAttribute('data-panfleto-alt') || 'Panfleto — Saberes da Terra';
+        modalImg.src = src;
+        modalImg.alt = alt;
+        modalTitle.textContent = alt;
+      });
+
+      modalEl.addEventListener('hidden.bs.modal', function () {
+        modalImg.removeAttribute('src');
+        modalImg.alt = '';
+      });
+
+      document.querySelectorAll('.panfleto-clicavel').forEach(function (el) {
+        el.addEventListener('keydown', function (event) {
+          if (event.key === 'Enter' || event.key === ' ') {
+            event.preventDefault();
+            el.click();
+          }
+        });
+      });
+    });
+  </script>
 </body>
 </html>

@@ -196,3 +196,11 @@ body.pagina-ifsol {
   object-fit: cover;
   display: block;
 }
+
+.panfleto-clicavel {
+  cursor: zoom-in;
+}
+
+.texto-zoom {
+  color: #6E655F;
+}

@@ -251,3 +251,11 @@ body.pagina-ecomapss {
   object-fit: cover;
   display: block;
 }
+
+.panfleto-clicavel {
+  cursor: zoom-in;
+}
+
+.texto-zoom {
+  color: #6E655F;
+}
