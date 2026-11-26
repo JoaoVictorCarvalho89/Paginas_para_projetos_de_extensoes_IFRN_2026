@@ -181,3 +181,20 @@ body.pagina-saberes {
 .rodape-destaque {
   color: var(--cor-ocre);
 }
+
+.moldura-panfleto {
+  background-color: #FFFFFF;
+  border: 1.5px solid #DCD6C6;
+  max-width: 340px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.moldura-panfleto:hover {
+  transform: translateY(-4px);
+}
+
+.img-panfleto {
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  display: block;
+}
