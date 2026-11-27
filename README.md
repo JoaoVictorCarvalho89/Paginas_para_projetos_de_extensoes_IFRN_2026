@@ -19,7 +19,6 @@ O objetivo principal deste projeto é dar visibilidade às ações de extensão 
 
 - **HTML5**: Estruturação semântica do conteúdo.
 - **CSS3**: Estilização e design responsivo.
-- **JavaScript** *(opcional)*: Interatividade e dinamicidade das páginas.
 - **Bootstrap** *Framework para responsividade.
 
 ## 👥 Autores & Contribuidores
