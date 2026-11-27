@@ -43,13 +43,13 @@
         <div class="col-lg-6 d-flex justify-content-center">
           <div class="position-relative d-inline-block">
             <!-- Círculo Principal (Fauna) -->
-            <div class="foto-fauna-placeholder rounded-circle shadow d-flex flex-column justify-content-center align-items-center text-center p-4">
-              <img src="Imagens/Foto-1-ecomapss-turma-aula-de-campo.jpeg" alt="Exemplo de fauna local do campus" class="rounded-circle w-100 h-100 object-fit-cover">
+            <div class="foto-fauna-placeholder foto-clicavel rounded-circle shadow d-flex flex-column justify-content-center align-items-center text-center p-4" role="button" tabindex="0" aria-label="Ampliar foto dos criadores do projeto" data-bs-toggle="modal" data-bs-target="#modalZoomEco" data-zoom-src="Imagens/Foto-2-criadores-do-projeto.jpeg" data-zoom-alt="Criadores do projeto — ECOMAPSS">
+              <img src="Imagens/Foto-2-criadores-do-projeto.jpeg" alt="Criadores do projeto — ECOMAPSS" class="rounded-circle w-100 h-100 object-fit-cover">
             </div>
 
             <!-- Círculo Secundário (Flora) -->
-            <div class="foto-flora-placeholder rounded-circle shadow d-flex justify-content-center align-items-center text-center p-2 position-absolute bottom-0 start-0">
-              <img src="Imagens/Foto-2-criadores-do-projeto.jpeg" alt="Foto com criadores do projeto" class="rounded-circle w-100 h-100 object-fit-cover">
+            <div class="foto-flora-placeholder foto-clicavel rounded-circle shadow d-flex justify-content-center align-items-center text-center p-2 position-absolute bottom-0 start-0" role="button" tabindex="0" aria-label="Ampliar foto da turma em aula de campo" data-bs-toggle="modal" data-bs-target="#modalZoomEco" data-zoom-src="Imagens/Foto-1-ecomapss-turma-aula-de-campo.jpeg" data-zoom-alt="Turma em aula de campo — ECOMAPSS">
+              <img src="Imagens/Foto-1-ecomapss-turma-aula-de-campo.jpeg" alt="Turma em aula de campo — ECOMAPSS" class="rounded-circle w-100 h-100 object-fit-cover">
             </div>
 
             <!-- Logotipo Vetorial ECOMAPSS -->
@@ -267,12 +267,12 @@
     </div>
   </footer>
 
-  <!-- MODAL DE ZOOM DOS PANFLETOS -->
+  <!-- MODAL DE ZOOM DAS IMAGENS -->
   <div class="modal fade" id="modalZoomEco" tabindex="-1" aria-labelledby="modalZoomEcoLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg">
       <div class="modal-content border-0 rounded-4 overflow-hidden">
         <div class="modal-header border-0 pb-0">
-          <h3 class="modal-title h6 fw-bold titulo-marinho" id="modalZoomEcoLabel">Panfleto — ECOMAPSS</h3>
+          <h3 class="modal-title h6 fw-bold titulo-marinho" id="modalZoomEcoLabel">Imagem — ECOMAPSS</h3>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
         </div>
         <div class="modal-body text-center p-3 p-md-4">
@@ -293,8 +293,8 @@
       modalEl.addEventListener('show.bs.modal', function (event) {
         var trigger = event.relatedTarget;
         if (!trigger) return;
-        var src = trigger.getAttribute('data-panfleto-src') || '';
-        var alt = trigger.getAttribute('data-panfleto-alt') || 'Panfleto — ECOMAPSS';
+        var src = trigger.getAttribute('data-zoom-src') || trigger.getAttribute('data-panfleto-src') || '';
+        var alt = trigger.getAttribute('data-zoom-alt') || trigger.getAttribute('data-panfleto-alt') || 'Imagem — ECOMAPSS';
         modalImg.src = src;
         modalImg.alt = alt;
         modalTitle.textContent = alt;
@@ -305,7 +305,7 @@
         modalImg.alt = '';
       });
 
-      document.querySelectorAll('.panfleto-clicavel').forEach(function (el) {
+      document.querySelectorAll('.panfleto-clicavel, .foto-clicavel').forEach(function (el) {
         el.addEventListener('keydown', function (event) {
           if (event.key === 'Enter' || event.key === ' ') {
             event.preventDefault();

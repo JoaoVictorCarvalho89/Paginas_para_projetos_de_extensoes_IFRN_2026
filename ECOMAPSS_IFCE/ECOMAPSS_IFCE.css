@@ -252,7 +252,8 @@ body.pagina-ecomapss {
   display: block;
 }
 
-.panfleto-clicavel {
+.panfleto-clicavel,
+.foto-clicavel {
   cursor: zoom-in;
 }
 
